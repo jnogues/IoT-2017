@@ -1,4 +1,4 @@
-/file IoT-eth-00.ino
+//file IoT-eth-00.ino
 //Internet of Things, Institut Rambla Prim
 //Jaume Nogues jnogues@gmail.com
 //http://vps249990.ovh.net/iot/
