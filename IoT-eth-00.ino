@@ -18,12 +18,6 @@ byte arduino_mac[] = { 0xDE, 0xED, 0xBA, 0xFE, 0xFE, 0xED };
 //CAL CANVIAR AQUESTA MAC PER UN ALTRE
 //NO PODEN HAVER 2 IGUALS A LA MATEIXA XARXA
 
-//You need specify one of this servers:
-//Blynk.begin(auth, arduino_mac);//cloud
-Blynk.begin(auth, "vps249990.ovh.net", 8442, arduino_mac);//rPrim server
-//Blynk.begin(auth, "blynk-cloud.com", 8442, arduino_mac);//cloud
-//Blynk.begin(auth, IPAddress(192,168,1,100), 8442, arduino_mac);//IP server
-
 void setup()
 {
 pinMode(2,INPUT);
@@ -34,7 +28,11 @@ pinMode(3,OUTPUT);
 pinMode(7,OUTPUT);
 pinMode(A3,OUTPUT);
 pinMode(9,OUTPUT);
-
+//You need specify one of this servers:
+//Blynk.begin(auth, arduino_mac);//cloud
+Blynk.begin(auth, "vps249990.ovh.net", 8442, arduino_mac);//rPrim server
+//Blynk.begin(auth, "blynk-cloud.com", 8442, arduino_mac);//cloud
+//Blynk.begin(auth, IPAddress(192,168,1,100), 8442, arduino_mac);//IP server
 Serial.begin(115200);
 
 }
